@@ -7,7 +7,7 @@ document.getElementById("btnGet").addEventListener("click", function () {  // Bu
     var number = document.getElementById("number").value;  // html'deki inputumun value'sini number değişkenime aktardım.   
 
     if (number % 2 == 0) {      // number değişkenimi mod'unu hesaplatmak için 2 ile bölümünden kalan 0 ise true 
-        oddOrEven.innerText = "Event "; // global olarak tanımladığım değişkenime koşulumu sağladıysa innerText özelliğini kullanarak html ekranıma Event yazdırdım.
+        oddOrEven.innerText = "Even "; // global olarak tanımladığım değişkenime koşulumu sağladıysa innerText özelliğini kullanarak html ekranıma Event yazdırdım.
         oddishOrEvenish(number); //  oluşturmuş olduğum fonksiyonuma sayımı göndermdim. 
 
     }
@@ -32,13 +32,13 @@ function oddishOrEvenish(number2) { //  oddishOrEvenish adında parametreli fonk
     
 
     if (sum % 2 == 0) { // sonucun  2 ile bölümünden  kalan 0 ise  true (ÇİFTTİR)
-        const OddOrEvent = document.getElementById("OddOrEvent"); // OddOrEvent adında değişken oluşurup OddOrEvent id değişkenine tanımladım 
-        OddOrEvent.innerText = "Event"; // html tarafında oluşurmuş olduğum kısma yazdırdım
+        const OddOrEven = document.getElementById("OddOrEven"); // OddOrEven adında değişken oluşurup OddOrEven id değişkenine tanımladım 
+        OddOrEven.innerText = "Even"; // html tarafında oluşurmuş olduğum kısma yazdırdım
     }
 
     else if (sum % 2 == 1) { // üst satırda yaptığım şeyleri Odd için yaptım. 
-        const OddOrEvent = document.getElementById("OddOrEvent");
-        OddOrEvent.innerText = "Odd";
+        const OddOrEven = document.getElementById("OddOrEven");
+        OddOrEven.innerText = "Odd";
     }
 
     remainder = sum % 2; // bu kısımda kalan kaç olduğunu hesaplatmak için remainder adında global değikenimi fonksiyonumun içerisine çağırıpsum içerisindeki değer 2 ile bölümünden kalanı değişkenime aktarıyorum.
